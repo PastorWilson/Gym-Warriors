@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Gym Warrions | Home Page</title>
+    <link rel="shortcut icon" href="/Img/Gym Warriors.png" type="image/x-icon">
+
+</head>
+<body >
+    <header>
+        <div class ='container-nav'>
+            <!--navegação com os links-->
+            <nav id ='navegação'>
+                <a href="index.html" style="text-decoration: none;"><img src ="/Img/Gym_Warriorsd-removebg-preview.png" alt ='Logo' class="logo"/></a>
+                <ul>
+                    <li><a href="index.html" class="links">Home</a></li>
+                    <li><a href="Sobre.html" class="links">Planos</a></li>
+                    <li><a href="IMC.html" class="links">IMC</a></li>
+                    <li><a href="login.html" class="linkLogin">Login</a></li>
+                    <div>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                     </div>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <!--Este é o nosso conteúdo principal-->
+    <main id ="principal">
+        <div id ="carrossel">
+            <input type="radio" id ="radio1" class="radios" value ="radio1"/>
+            <input type="radio" id ="radio2" class="radios" value ="radio2"/>
+            <input type="radio" id ="radio3" class="radios" value ="radio3"/>
+            <input type="radio" id ="radio4" class="radios" value ="radio4"/>
+            <div>
+                <img src = "img/1.jpg" class="img-carrossel"/>
+            </div>
+
+            <div>
+                <img src = "Img/2.jpg" class="img-carrossel"/>
+            </div>
+
+            <div>
+                <img src = "Img/3.jpg" class="img-carrossel"/>
+            </div>
+
+            <div>
+                <img src = "Img/4.jpg" class="img-carrossel"/>
+            </div>
+        </div>
+        <section id ="container-planos">
+
+                    <div class="div-planos">
+                        <h2  class="titulo-plano">Nossos Planos</h2>
+                    <div class="p1">
+                        <label>Pró</label>
+                        <img src ='*'/>
+                        <br>
+                        <label>R$200.00</label>
+                        <button>Garanta agora</button>
+                    </div>
+                    <div class="p2">
+                        <label>Normal</label>
+                        <img src ='*'/>
+                        <br>
+                        <label>R$200.00</label>
+                        <button>Garanta agora</button>
+                    </div>
+                    <div class="p3">
+                        <label>Lite </label>
+                        <img src ='*'/>
+                        <br>
+                        <label>R$200.00</label>
+                        <button>Garanta agora</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id ="rodape">
+
+        <script src="index.js"></script>
+    </footer>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
