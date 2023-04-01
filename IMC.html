@@ -5,39 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMC</title>
+    <link rel="stylesheet" href="IMC.css" />
+    <link rel="shortcut icon" href="Img/logovc.jpg" type="image/x-icon">
   </head>
   <body>
     <header>
-        <div class ='container-nav'>
-            <nav id ='navegação'>
-                <img src ="*" alt ='Logo'/>
-                <ul>
-                    <li><a href="index.html" class="links">Home</a></li>
-                    <li><a href="Sobre.html" class="links">Planos</a></li>
-                    <li><a href="IMC.html" class="links">IMC</a></li>
-                    <li><a href="login.html" class="links">Login</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> 
+      <div class="container-nav">
+        <nav id="navegação">
+          <a href="index.html"><img src="Img/logoApha.jpg" alt="Logo" class="logo" /></a>
+          <ul>
+            <li><a href="index.html" class="links">Home</a></li>
+            <li><a href="Sobre.html" class="links">Planos</a></li>
+            <li><a href="login.html" class="links">Login</a></li>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+             </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <script src="IMC.js"></script>
     <div class="container-imc">
       <div class="imc">
-        <label class="subtitulos">Peso</label>
-        <input type="text" id="peso" placeholder="Peso" />
-        <label class="subtitulos">Altura</label>
-        <input type="text" id="altura" placeholder="Altura" />
-        <br />
-        <label>Resultado:</label>
-        <input type="text" disabled id ="resultado"/>   
-        <label>IMC:</label>
-        <input type="text" disabled id ="imc"/> 
-        <button onclick="CalcularIMC()">Calcular</button>
+        <div class="imc-resultado">
+          <label class="resultado">Resultado:</label>
+          <br />
+          <input type="text" disabled id="resultado" />
+          <br />
+        </div>
+        <div class="container-imc-leveis">
+         <label class="imc-leveis">Magreza Grave</label> 
+         <label class="imc-leveis">Magreza Moderada</label>
+         <label class="imc-leveis"> Magreza leve</label>
+         <label class="imc-leveis">Saudável</label>
+         <label class="imc-leveis">Sobrepeso</label>
+         <label class="imc-leveis">Obesidade Grau I</label>
+         <label class="imc-leveis">Obesidade Grau II</label>
+         <label class="imc-leveis">Obesidade Grau III</label>
+          </datalist>
+          <br />
+          <input type="range" id="imc-range" min="0" max="40.0" value="" list="imc-niveis"  />
+        </div>
+        <div class="container-peso-altura">
+            <label class="subtitulos">Peso</label>
+            <input type="text" id="peso"  class="imc-m" />
+            <label class="subtitulos">Altura</label>
+            <input type="text" id="altura" class="imc-m" />
+            <br />
+            <label>IMC:</label>
+            <input type="text" disabled id="imc" />
+        </div>
+        <div class="container-botao">
+           <button onclick="CalcularIMC()" id ="btn-calcular">Calcular</button>
+        </div>
       </div>
     </div>
-
-    <footer id ="rodape">
-
-    </footer>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <footer id="rodape"></footer>
   </body>
 </html>

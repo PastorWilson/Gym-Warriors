@@ -1,13 +1,14 @@
 function CalcularIMC() {
     let peso = document.getElementById("peso").value;
     let altura = document.getElementById("altura").value;
+    var myRanger =document.getElementById("imc-range");
     if(peso == "" || altura =="" || altura == "" &&  peso =="") {
         alert("Escrevas nos campos")
     } 
     else{ 
-        let resultado = peso / (altura*altura);
-        Recebe(resultado.toFixed(2).replace(2,",","."));
-
+        let float =  altura;
+        let resultado = peso / (float*float*0.01/100);
+        Recebe(resultado.toFixed(1));
     }
   }
   function Recebe(resultado){
@@ -29,12 +30,21 @@ function CalcularIMC() {
     else if(resultado >= 30.0  && resultado <= 35.0 ){
         document.getElementById('imc').value = "Obesidade Grau I";
     }
-    else if(resultado >= 35.0  && resultado <= 40.0 ){
+    else if(resultado > 35.0  && resultado <= 40.0 ){
         document.getElementById('imc').value = "Obesidade Grau II";
     }
    else if(resultado > 40.0){
         document.getElementById('imc').value = "Obesidade Grau III";
 
+
     }
     document.getElementById('resultado').value = resultado;
+    document.getElementById("imc-range").value = resultado
   }
+
+  
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark'); 
+    })
+
+  
