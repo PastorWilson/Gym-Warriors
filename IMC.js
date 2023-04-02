@@ -1,7 +1,7 @@
 function CalcularIMC() {
     let peso = document.getElementById("peso").value;
     let altura = document.getElementById("altura").value;
-    var myRanger =document.getElementById("imc-range");
+    
     if(peso == "" || altura =="" || altura == "" &&  peso =="") {
         alert("Escrevas nos campos")
     } 
@@ -35,9 +35,9 @@ function CalcularIMC() {
     }
    else if(resultado > 40.0){
         document.getElementById('imc').value = "Obesidade Grau III";
-
-
     }
+
+    
     document.getElementById('resultado').value = resultado;
     document.getElementById("imc-range").value = resultado
   }

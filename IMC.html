@@ -39,18 +39,33 @@
           <br />
         </div>
         <div class="container-imc-leveis">
-         <label class="imc-leveis">Magreza Grave</label> 
-         <label class="imc-leveis">Magreza Moderada</label>
-         <label class="imc-leveis"> Magreza leve</label>
-         <label class="imc-leveis">Saudável</label>
-         <label class="imc-leveis">Sobrepeso</label>
-         <label class="imc-leveis">Obesidade Grau I</label>
-         <label class="imc-leveis">Obesidade Grau II</label>
-         <label class="imc-leveis">Obesidade Grau III</label>
+        <datalist id ='num'>
+          <option>16.0</option>
+          <option>17.0</option>
+          <option>18.5</option>
+          <option>25.0</option>
+          <option>30.0</option>
+          <option>35.0</option>
+          <option>40.0</option>
+          <option>45.0</option>
           </datalist>
-          <br />
-          <input type="range" id="imc-range" min="0" max="40.0" value="" list="imc-niveis"  />
-        </div>
+          <div class="teste">
+            <div class="esquerda">
+              <label class="imc-leveis">M. Grau III</label> 
+              <label class="imc-leveis">M. Grau II</label>
+              <label class="imc-leveis"> M. Grau I</label>
+              <label class="imc-leveis-saudavel">Saudável</label>
+            </div>
+              <div class="direita">
+                <label class="imc-leveis-sobrepeso">Sobrepeso</label>
+                <label class="imc-leveis-grau">O. Grau I</label>
+                <label class="imc-leveis-grau2">O. Grau II</label>
+                <label class="imc-leveis-grau3">O. Grau III</label>
+              </div>
+              <br />
+          </div>
+          <input type="range" id="imc-range" min="15.0" max="45.0" step="0.1" value="" list="num" disabled /> 
+          </div>
         <div class="container-peso-altura">
             <label class="subtitulos">Peso</label>
             <input type="text" id="peso"  class="imc-m" />
