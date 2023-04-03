@@ -4,7 +4,9 @@ function verifica() {
 
   if (senha == "" || confirmarSenha == "") {
     alert("Os campos nao podem ser vazios");
-  } else if (senha != confirmarSenha) alert("Senhas não batem uma com a outra");
+  } 
+  else if (senha != confirmarSenha)
+  alert("Senhas não batem uma com a outra");
 }
 
 let bntVoltar = document.getElementById("btn-voltar");

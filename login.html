@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title> Login | Gym Warriors</title>
     <link rel="stylesheet" href="login.css">
     <link rel="shortcut icon" href="Img/logovc.jpg" type="image/x-icon">
 </head>
@@ -34,42 +34,22 @@
     <div class ="container-btn-voltar">
         <button id ="btn-voltar" style="cursor: pointer;"><img src ="Img/icons8-à-esquerda-dentro-de-um-círculo-90.png" width="60px" class ="img-btn"></button>
     </div>
-    <section id ="container-form-cadastro">
-        <form method="post" id ="formularioCadastro">
-            <h2>Cadastro</h2>
-            <label>Usuário</label>
-            <br>
-            <input type="text" id="usuario" name ="usuario"/>
-            <br>
-            <label>Email</label>
-            <br>
-                
-            <input type ="email" name="email" id ="email"/>
-            <br>
-            <label>Senha</label>
-            <br>
-            <input type ="password" name ="senha" id ="senha"/>
-            <br>
-            <a href="#formularioLogin">Ja tenho uma conta</a></p>
-            <br>    
-            <input type="button" name="btnEnviar" id="btnEnviar" value ="Cadastrar" onclick="verifica()"></button>
 
-        </form>
-    </section>
     <section id = "container-form-login">
         <form method="post" action="ConfirmaLogin" id = "formularioLogin">
             <h2 class="titulo">Login</h2>
             <label class="subtitulos">Email</label>
             <br>
-            <img src="img/iconEmail.png" class ="iconEmail">
-            <input type ="email" name = "email" id ="email" placeholder="fulando@gmail"/>
+            <img src="img/iconEmail.png" class ="iconEmail" >
+            <input type ="email" name = "email" id ="email" class="input-form" placeholder="Email"/>
             <br>
             <label class="subtitulos">Senha</label>
             <br>
             <img src="Img/iconSenha.png" class ="iconSenha">
-            <input type ="password" name = "senha" id ="senha" placeholder="*****"/>
+            <input type ="password" name = "senha" id ="senha" class="input-form" placeholder="Senha"/>
             <br>
-            <a href="#formularioCadastro">Ainda não possuai uma conta</a>
+            <button id ="btn-google"><img src="img/icons8-google-logo-48.png" class="logo-google">Continuar com o Google</button>
+            <a href="cadastro.html">Criar conta</a>  
             <br>
             <input type="submit" value ="Login" id ="btn-login"/>
         </form>

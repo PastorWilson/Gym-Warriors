@@ -52,6 +52,11 @@ body.dark {
   background: #ffffff;
   
 }
+.container-nav {
+  width: 100%;
+  z-index: 2;
+  background-color: #000000;
+}
 header.dark{
   background: red;
 
@@ -180,86 +185,120 @@ a{
   color: #f39c12;
 }
 body{
-    background-image:url("img/4.jpg");
-    background-size: cover;
-    background-position: center;
- 
-
+  overflow-x: hidden;
 }
-#container-form-cadastro{
-    width: 40vw;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+#container-form-login{
+  height: 70vh;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
-#formularioCadastro{
-    width: 75%;
-    background-color: rgb(255, 255, 255,.4);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    box-shadow: 3px 1px 6px 1px black;
+#formularioLogin{
+  background-color: #c2c2c2;
+  border-radius: 3px;
+  height: 65vh;
+  backdrop-filter: blur(8px);
+  width: 25vw;
+  box-shadow: rgb(182, 182, 182) 1px 1px 5px 2px;
 }
-#formularioCadastro label{
-font-size: 20px;
-color: #580909
-
+.titulo{
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
 }
-#formularioCadastro h2{
-    text-align: center;
-    font-size: 40px;
-    color: #300366;
-    font-family: 'foda';
-    margin: 8px;
-    color: #180370
-
-}
-.iconUsuario{
-    position: absolute;
-    top: 90px;
-    width: 30px;
-}
-#usuario, #email,#senha,#confirmarSenha:focus{
-    border: none;
-    border-bottom: 1px solid black;
-    background: transparent;
-}
-#usuario, #email,#senha,#confirmarSenha{
-    width: 100%;
-    background: transparent;
-    padding: 4px 0px;
-    font-size: 16px;
-    margin-bottom: 30px;
-    outline: none;
-    color: #180370;
-    border: none;
-    border-bottom: 1px solid rgb(9, 1, 121);
-}
-#btn-voltar{
-    border: 0px;
-    background: transparent;
+.img-btn{
+  transition: 1s;
 }
 .img-btn:hover{
-    transition: 0.7s;
-    border-radius: 30px;
+  transition: 1s;
+  scale: 1.1;
+}
+.subtitulos{
+  font-size: 1.6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  display: flex ;
+  width: 10.2vw;
+  justify-content: center;
+  text-align: start;
+}
+#btn-voltar{
+  background: transparent;
 }
 
-
-#container-form-login{
-    
+  .iconEmail , .iconSenha{
+  width: 20px;
+  height: 20px;
+  left: 40px;
+  z-index: 3;
+  margin-top: 9px;
+  position: absolute;
 }
-#btnEnviar{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    box-shadow: #105D8F 1px 1px 5px 1px ;
-    font-size: 20px;
-    border-radius: 3px;
-    cursor: pointer;
-    background-color:#180370;
-    padding: 8px;
-    border: none;
-    color:#105D8F ;
+.input-form{
+  width: 20vw;
+  display: flex;
+  padding: 8px;
+  margin: auto;
+  position: relative;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid black ;
+  padding-left: 30px;
+}
+.logo-google{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin: 6px;
+}
+#btn-google:hover{
+  transition: 0.5s;
+  box-shadow: #000000 1px 1px 6px 2px;
+}
+#btn-google{
+  font-size: 1.1rem;
+  transition: 0.5s;
+  border-radius: 6px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 30px;
+}
+#formularioLogin a{
+  text-align: center;
+  color:black;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 5px;
+}
+#formularioLogin a:hover{
+  text-decoration: underline;
+}
+
+#btn-login{
+  display: flex;
+  margin: auto;
+  margin-top: 4px;
+  background-color: #070e58;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  padding: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: 1s;
+  cursor: pointer;
+}
+#btn-login:hover{
+  background-color: white;
+  color:#070e58;
+  box-shadow: #000000 1px 1px 6px 2px;
+  transition: 1s;
 }
