@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Gym Warriors</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="container-nav">
+          <!--navegação com os links-->
+          <nav id="navegação">
+            <a href="index.html" style="text-decoration: none" class="aLogo"
+              ><img src="/Img/logoApha.jpg" alt="Logo" class="logo"
+            /></a>
+            <ul>
+              <li><a href="index.html" class="links">Home</a></li>
+              <li><a href="Planos.html" class="links">Planos</a></li>
+              <li><a href="IMC.html" class="links">IMC</a></li>
+              <li><a href="login.html" class="linkLogin">Login</a></li>
+              <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>    
+            </ul>
+          </nav>
+        </div>
+      </header>
+   
+    <section id ="container-form-cadastro">
+        <form method="post" id ="formularioCadastro">
+            <h2>Cadastro</h2>
+            <label>Usuário</label>
+            <br>
+            <img src="img/iconUsuario.png " class ="iconUsuario" > 
+            <input type="text" id="usuario" name ="usuario" placeholder="Usuario"/>
+            <br>
+            <label>Email</label>
+            <br>
+            <img src="img/iconEmail.png" class ="iconEmail" > 
+            <input type ="email" name="email" id ="email" placeholder="Email"/>
+            <br>
+            <label>Senha</label>
+            <br>
+            <img src="Img/iconSenha.png" class ="iconSenha">
+            <input type ="password" name ="senha" id ="senha" placeholder="Senha"/>
+            <br>
+            <button id ="btn-google"><img src="img/icons8-google-logo-48.png" class="logo-google">Continuar com o Google</button>
+            <br>
+            <a href="login.html">Ja tenho uma conta</a></p>
+            <br>    
+            <input type="button" name="btnEnviar" id="btnEnviar" value ="Cadastrar" onclick="verifica()"></button>
+        </form>
+    </section>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
