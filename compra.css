@@ -1,0 +1,11 @@
+
+body{
+    background-color: black;
+}
+.servico{
+    font-size: 3rem;
+    color: rgb(40, 38, 138);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    margin:200px;
+}

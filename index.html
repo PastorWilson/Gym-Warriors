@@ -8,47 +8,82 @@
     <title>Gym Warrions | Home Page</title>
     <link rel="shortcut icon" href="/Img/logovc.jpg" type="image/x-icon" />
   </head>
+  
   <body>
     <header>
       <div class="container-nav">
         <!--navegação com os links-->
-        <nav id="navegação">
+        <nav id="navegacao">
           <a href="index.html" style="text-decoration: none" class="aLogo"
             ><img src="/Img/logoApha.jpg" alt="Logo" class="logo"
           /></a>
           <ul>
             <li><a href="index.html" class="links">Home</a></li>
-            <li><a href="Planos.html" class="links">Planos</a></li>
+            <li><a href="Plano.html" class="links">Planos</a></li>
             <li><a href="IMC.html" class="links">IMC</a></li>
             <li><a href="login.html" class="linkLogin">Login</a></li>
             <div>
               <input type="checkbox" class="checkbox" id="chk" />
               <label class="label" for="chk">
-                <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i> 
                 <div class="ball"></div>
               </label>
             </div>
           </ul>
         </nav>
       </div>
+
     </header>
     <!--Este é o nosso conteúdo principal-->
     <main id="principal">
-
-      <div id="container-carrossel">
-            <div class="carrossel">
-                <div class="">
-
-                </div>
+      <section class="containerproje">
+        <div class="slide-container active">
+            <div class="slide">
+             <div class="contentproje">
+               <h3>Bem Vindo a Gym Warriors</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique ipsam quibusdam inventore earum, quo assumenda, quam molestiae 
+                   laborum praesentium velit accusantium iure excepturi. Iste dolores id odit veritatis ex?</p>
+               <a href="https://ftd.com.br/" class="bntproj">Saiba mais</a>
+             </div>
             </div>
-      </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+             <div class="contentproje">
+               <h3>Metaverso</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid assumenda eaque, inventore 
+                   pariatur molestias hic, aspernatur nihil ipsam eius magni incidunt? Incidunt eveniet non magnam 
+                   reprehenderit beatae doloribus soluta.</p>
+               <a href="https://ftd.com.br/" class="bntproj">Saiba mais</a>
+             </div>
+            </div>
+        </div>
+        
+        <div class="slide-container">
+            <div class="slide">
+             <div class="contentproje">
+               <h3>Metaverso</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos, qui obcaecati nulla 
+                aliquid non iure autem, esse aliquam itaque rerum nostrum 
+                repudiandae! At eligendi quas provident omnis voluptatem. Dignissimos..</p>
+               <a href="https://www.escolasconectadas.org.br/cursos" class="bntproj">Saiba mais</a>
+             </div>
+            </div>
+        </div>
+
+        
+        <div id="prev" onclick="prev()"> < </div>
+        <div id="next" onclick="next()"> > </div>
+    </section>
+
       <div class="container-titulos-planos">
         <h2 class="titulo-plano">Planos</h2>
       </div>
       <div id="container-planos">
         <div class="plano-bronze">
-          <h2 class="h1">Bronze</h2>
+          <h2 class="h1">Prata</h2>
           <label class="plano-mensal">Plano Mensal</label>
           <label class="plano-valor">R$ 115,00</label>
           <label class="plano-mensal">Plano Anual</label>
@@ -87,32 +122,60 @@
           <a href="Planos.html">Saiba mais</a>
         </div>
       </div>
+      <div id ="containe-localizacao">
+        <h2 class="titulo-iframe">Encontre-nos</h2>
+        <div class="div-img">
+          <img src="Img/frente-academia.jpg" class="img-academia">
+          <img src="Img/lado-academia.jpg" class="img-academia">
+          <br>
+        </div>
+        <label class="subtitulos-iframe">R. Guaicurus, 397 - Água Branca São Paulo - SP</label>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.5655216779742!2d-46.6902123304537!3d-23.523074169018127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef80cca002d8f%3A0x17b023c0d6a79436!2sR.%20Guaicurus%2C%20397%20-%20%C3%81gua%20Branca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005033-000!5e0!3m2!1spt-BR!2sbr!4v1680590788814!5m2!1spt-BR!2sbr" 
+          width="500" height="300" style="border:1px solid black; border-radius: 4px;" allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </main>
 
-    <script src="index.js"></script>
-    <footer id ="rodape">
-        <div class="container-footer-logo">
-            <img src="/Img/logoApha.jpg" alt="logo" class="fooster-logo" />
-        </div>
+    <footer id="rodape">
+      <div class="container-footer-logo">
+        <img src="/Img/logoApha.jpg" alt="logo" class="fooster-logo" />
+      </div>
       <div id="footer-informações">
         <div class="container-informacoes">
-            <label>Fale Conosco</label>
-            <a href ="https://api.whatsapp.com/send?phone=11926925801&text=
+          <label>Fale Conosco</label>
+          <a
+            href="https://api.whatsapp.com/send?phone=11926925801&text=
             Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20academia">
-                <img src="Img/icons8-whatsapp-100.png" class="fooster-link-inst" />(11) 92692-5801</a>
-            <a href ="*"><img src="Img/icons8-gmail-100.png"  class="fooster-link-inst" />ContatoGymWarrior@gmail.com</a>
+            <img src="Img/icons8-whatsapp-100.png"class="fooster-link-inst"/>(11) 92692-5801</a>
+          <a href="*"
+            ><img
+              src="Img/icons8-gmail-100.png"
+              class="fooster-link-inst"
+            />ContatoGymWarrior@gmail.com</a
+          >
         </div>
         <div class="container-redes">
-            <label>Redes Sociais</label>
-                <div class="div-redes">
-                    <a href=""><img src="Img/icons8-facebook-100.png" class="redes"></a>
-                    <a href=""><img src="Img/icons8-instagram-100.png "class ="redes"></a>
-                    <a href=""><img src=""></a>
-                </div>
-                <span>© 2023 Gym Warriors</span>    
+          <label>Redes Sociais</label>
+          <div class="div-redes">
+            <a href=""
+              ><img src="Img/icons8-facebook-100.png" class="redes"
+            /></a>
+            <a href=""
+              ><img src="Img/icons8-instagram-100.png " class="redes"
+            /></a>
+            <a href="https://www.google.com/maps/place/Oxigenio+Academia+de+Gin%C3%A1stica/@-23.5229402,-46.6895221,21z/data=!4m6!3m5!1s0x94cef80cca7eb6b9:0xfa678afaec832b4e!8m2!3d-23.5230754!4d-46.6895686!16s%2Fg%2F1thp93lt" target="_blank">
+              <img src="Img/icons8-marcador-100.png" class="redes" />
+            </a>
+          </div>
+          <span>© 2023 Gym Warriors</span>
         </div>
       </div>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/998c60ef77.js"crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

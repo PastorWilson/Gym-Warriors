@@ -42,9 +42,12 @@ function CalcularIMC() {
     document.getElementById("imc-range").value = resultado
   }
 
-  
-  chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark'); 
-    })
+  const html = document.querySelector('html')
+  const chk = document.getElementById('chk')
+
+  chk.addEventListener('change', function ()  {
+  html.classList.toggle('dark')
+  })
+   
 
   

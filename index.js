@@ -1,41 +1,40 @@
-var swiper = new swiper(".swiper",{
-  cssMode:true,
-  loop:true,
-  navigation:{
-    nextEl:".swiper-button-next",
-    prevEl:".swiper-button-prev"
-  },
-  pagination:{
-    el: ".swiper=pagination"
-  },
-  keyboard:true,
-});
+const html = document.querySelector('html')
+const chk = document.getElementById('chk')
 
-  const chk = document.getElementById('chk')
-  let teste = document.querySelectorAll('.dark')
-
-  chk.addEventListener('change', () => {
-  document.body.classList.toggle('dark'); 
+  chk.addEventListener('change', function ()  {
+  html.classList.toggle('dark')
   })
 
+  let slides2 = document.querySelectorAll(".imgs");
+  let index2 = 0;
 
-let count = 1;
-document.getElementById("radio1").checked= true;
-
-setInterval(function(){
-    nextImage()
-},5000)
-  function nextImage(){
-    let t =document.querySelectorAll(".img-carrossel")
-
-
-
-      document.getElementById("radio"+count).checked= true;
+  function nextr2(){
+    slides2[index2].classList.remove('active');
+    index2 = (index2 + 1) % slides2.length;
+    slides2[index2].classList.add('active');
   }
+  function prev2(){
+    slides2[index2].classList.remove('active');
+    index2 = (index2 - 1) % slides2.length;
+    slides2[index2].classList.add('active');
+  }
+  
+let slides = document.querySelectorAll('.slide-container');
+let index = 0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+}
 
 
-   
-    
-   
+setInterval(next, 8000);
 
     

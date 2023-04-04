@@ -1,25 +1,3 @@
-@font-face{
-font-family: 'foda';
-src: url(Fonts/Dihil.ttf);
-}
-@font-face {
-font-family: 'terror';
-src: url(Fonts/Nightcore\ Demo.ttf);
-}
-@font-face {
-font-family: "teste";
-src: url(Fonts/Insomnia\ 1.ttf);
-}
-@font-face {
-font-family: 'teste2';
-src: url(/Fonts/Vermin\ Vibes.ttf);
-}
-@font-face {
-    font-family: 'mim';
-    src: url(Fonts/Storm\ Gust.ttf);
-}
-
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 #light,
 :root{
   --bg-color:White;
@@ -29,6 +7,9 @@ src: url(/Fonts/Vermin\ Vibes.ttf);
 :root:has(#dark:checked){
   --bg-color:rgb(0, 0, 0);
   --text-color:rgb(255, 255, 255);
+}
+.dark body{
+  background-color: #353535;
 }
 
 * {
@@ -72,11 +53,11 @@ header{
   height:70px;
 }
 .logo{  
-  position: absolute;
+  height: 70px;
+  width: 140px;
   display: flex;
-  top: 0%;
-  width: 10%;
-}
+  align-items: center;
+ }
 
 .logo:hover{
 opacity: 90%;
