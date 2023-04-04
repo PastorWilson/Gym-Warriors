@@ -18,6 +18,7 @@ const chk = document.getElementById('chk')
     index2 = (index2 - 1) % slides2.length;
     slides2[index2].classList.add('active');
   }
+
   
 let slides = document.querySelectorAll('.slide-container');
 let index = 0;
